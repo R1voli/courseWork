@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>R1voli shop</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+</head>
+<body>
+    
+<div id="app">
+    <header class="header ">
+        <div class="container">
+            <nav class="menu">
+                <ul class="menu_left">
+                    <li class="menu_left__item_1"><a href="index.html" class="menu__link"><img src="photo/svg/logo.svg"
+                                alt="logo"></a>
+                    </li>
+                    <li class="menu_left__item_2"><a href="product.html" class="menu__link"><img src="photo/svg/lypa.svg"
+                                alt="lypa"></a>
+                    </li>
+                </ul>
+                <ul class="menu_right">
+                    <li class="menu_right__item_1"><a href="#" class="menu__link"><img src="photo/svg/menu.svg"
+                                alt="menu"></a>
+
+                        <div class="mega-box">
+                            <a class="menu-x" href="">X</a>
+                            <h2 class="mega-menu">
+                                MENU
+                            </h2>
+                            <div class="mega-item">
+                                <h3 class="mega-heading">MAN</h3>
+                                <a class="mega-link" class="mega-link" href="catalog.html">Accessories</a>
+                                <a class="mega-link" class="mega-link" href="catalog.html">Bags</a>
+                                <a class="mega-link" class="mega-link" href="catalog.html">Denim</a>
+                                <a class="mega-link" class="mega-link" href="catalog.html">T-Shirts</a>
+                            </div>
+
+                            <div class="mega-item">
+                                <h3 class="mega-heading">WOMAN</h3>
+                                <a class="mega-link" class="mega-link" href="catalog.html">Accessories</a>
+                                <a class="mega-link" class="mega-link" href="catalog.html">Jackets & Coats</a>
+                                <a class="mega-link" class="mega-link" href="catalog.html">Polos</a>
+                                <a class="mega-link" class="mega-link" href="catalog.html">T-Shirts</a>
+                                <a class="mega-link" class="mega-link" href="catalog.html">Shirts</a>
+                            </div>
+
+                            <div class="mega-item">
+                                <h3 class="mega-heading">KIDS</h3>
+                                <a class="mega-link" class="mega-link" href="catalog.html">Accessories</a>
+                                <a class="mega-link" class="mega-link" href="catalog.html">Jackets & Coats</a>
+                                <a class="mega-link" class="mega-link" href="catalog.html">Polos</a>
+                                <a class="mega-link" class="mega-link" href="catalog.html">T-Shirts</a>
+                                <a class="mega-link" class="mega-link" href="catalog.html">Shirts</a>
+                                <a class="mega-link" class="mega-link" href="catalog.html">Bags</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="menu_right__item_3"><a href="cart.html" class="menu__link"><img src="photo/svg/basket.svg"
+                                alt="korzina"></a>
+                            <div class="mega-box-vue">
+                                <p v-if="!cartItem.length">Basket is empty</p>
+                                <div class="cart-item" v-for="product of cartItem">
+                                    <div class="product-bio">
+                                        <img width="100px" :src="product.img" alt="Some img">
+                                        <div class="product-desc">
+                                            <div class="product-title">{{ product.product_name }}</div>
+                                            <div class="product-quantity">Quantity: {{ product.quantity }}</div>
+                                            
+                                        </div>
+                                    </div>
+
+                                    <div class="right-block">
+                                        <button class="del-btn" @click="removeProduct(product)">x</button>
+                                        <div class="product-price">{{ product.quantity * product.price }} BYN</div>
+                                    </div>
+                                </div>
+                            </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+
+    <section class="index-top">
+        <div class="index-top_img"><img class="top_img" src="/photo/png/index_top.png" alt="top_img"></div>
+        <div class="index-top_text"><p>THE BRAND OF<br><span class="index-top_text_span">LUXERIOUS FASHION</span></p></div>
+    </section>
+
+    <section class="for_person">
+        <div class="container">
+
+            <div class="for__parent">
+                <a href="catalog.html" class="a">
+                    <div class="for__item for__item__margin">
+                        <img class="for__img" src="/photo/png/for women.png" alt="for women">
+                        <p class="for__text__women">BEAUTIFUL<br><span class="for__text__color">FOR WOMEN</span></p>
+                    </div>
+
+                </a>
+
+                <a href="catalog.html" class="a">
+                    <div class="for__item for__item__margin">
+                        <img class="for__img" src="/photo/png/for men.png" alt="for men">
+                        <p class="for__text__men">BRUTAL<br><span class="for__text__color">FOR MEN</span></p>
+                    </div>
+                </a>
+
+                <a href="catalog.html" class="a">
+                    <div class="for__item for__item__margin-l">
+                        <img class="for__img" src="/photo/png/for kids.png" alt="for kids">
+                        <p class="for__text__kids">MODERN<br><span class="for__text__color">FOR KIDS</span>
+                        </p>
+                    </div>
+                </a>
+
+            </div>
+
+            <a href="catalog.html" class="a">
+                <div class="for__item img-accesories for__item__margin-l">
+                    <p class="for__text__accesories"> LUXIROUS & TRENDY<br><span
+                            class="for__text__color">ACCESORIES</span>
+                    </p>
+                </div>
+            </a>
+
+        </div>
+    </section>
+
+    <section class="featuredItems container">
+
+        <div class="featuredItem" v-for="product of filtered">
+
+            <div class="featuredImgWrap">
+                <img :src="product.img" alt="Some img">
+                <div class="featuredImgDark">
+                    <button class="addToCart" @click="addProduct(product)">
+                        <img src="/photo/svg/basket.svg" alt="">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+
+            <div class="featuredData">
+                <div class="featuredName">
+                    {{product.product_name}}
+                </div>
+                <div class="featuredText">
+                    {{product.text}}
+                </div>
+                <div class="featuredPrice">
+                    {{product.price}} BYN
+                </div>
+            </div>
+
+        </div>
+        
+    </section>
+    <div class="sec-button">
+        <a href="catalog.html" class="button-sec">
+            <p class="button-text">All Product</p>
+        </a>
+    </div>
+    
+    <section class="info">
+
+        <div class="info__container container">
+            <div class="info__card_1">
+                <img src="/photo/svg/car.svg" alt="car" class="info__img">
+                <h3 class="h3__info">Free delivery</h3>
+                <p class="p__info">Global delivery to anywhere in the world: fast, economical, safe!</p>
+            </div>
+
+            <div class="info__card_2">
+                <img src="/photo/svg/present.svg" alt="car" class="info__img">
+                <h3 class="h3__info">Sales and discounts</h3>
+                <p class="p__info">We have the lowest prices on the market and constant discounts for our customers!</p>
+            </div>
+
+            <div class="info__card_3">
+                <img src="/photo/svg/korona.svg" alt="car" class="info__img">
+                <h3 class="h3__info">Quality assurance</h3>
+                <p class="p__info">We guarantee the quality of the goods provided! Order with confidence in our reliability!</p>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="subscribe">
+        <div class="sub__content container">
+
+        <figure class="sub__info">
+            <div class="sub__face"><img src="photo/svg/face.svg" alt="face"></div>
+            <p class="sub__face__text">I am very happy with my purchase in this online store! Fast delivery, excellent quality of goods and responsive staff. I recommend it!</p>
+        </figure>
+
+        <div class="sub__message">
+            <h3 class="sub__message__text"><span class="sub__span">SUBSCRIBE</span> <br>
+                FOR OUR NEWLETTER AND PROMOTION</h3>
+            <form action="#">
+                <div class="sub__message__form">
+
+                    <input class="email" type="email" placeholder="Enter Your Email">
+                    <button class="button__sub" type="submit">Subscribe</button>
+
+                </div>
+            </form>
+        </div>
+
+    </div>
+    </section>
+
+    <section class="footer">
+        <div class="container">
+            <div class="footerLeft">
+                <a href="https://ru-ru.facebook.com/">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com/">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://ru.pinterest.com/#top">
+                    <i class="fab fa-pinterest-p"></i>
+                </a>
+                <a href="https://twitter.com/?lang=ru">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
+            <div class="footerRight">
+                &copy; 2023  All Rights Reserved.
+            </div>
+        </div>
+    </section>
+
+    <section class="madeBy">
+        <p>Created by Kravcov Andrei</p>
+    </section>
+</div>
+
+<script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js" integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="main.js"></script>
+   
+
+</body>
+</html>

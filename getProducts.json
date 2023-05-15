@@ -1,0 +1,68 @@
+[
+  {
+    "id_product": 1,
+    "product_name": "Jacket",
+    "price": 100,
+    "text": "Stylish, wear-resistant, multifunctional jacket for all weather conditions.",
+    "size": "XL",
+    "color": "Blue",
+    "img": "/photo/img/1.jpg",
+    "quantity":1
+  },
+
+  {
+    "id_product": 2,
+    "product_name": "Dress",
+    "price": 150,
+    "text": "Elegant, classic, black dress, perfect for special events.",
+    "size": "XS",
+    "color": "Black",
+    "img": "/photo/img/2.jpg",
+    "quantity":1
+  },
+
+  {
+    "id_product": 3,
+    "product_name": "Sweatshirt",
+    "price": 30,
+    "text": "Trendy, comfortable, stylish sweatshirt for a fashionable and comfortable everyday look.",
+    "size": "XL",
+    "color": "Blue",
+    "img": "/photo/img/3.jpg",
+    "quantity":1
+  },
+
+  {
+    "id_product": 4,
+    "product_name": "Vest",
+    "price": 25,
+    "text": "Refreshing, stylish, blue and white T-shirt, ideal for summer adventures and free time.",
+    "size": "XL",
+    "color": "Blue",
+    "img": "/photo/img/4.jpg",
+    "quantity":1
+  },
+
+  {
+    "id_product": 5,
+    "product_name": "Suit jacket",
+    "price": 70,
+    "text": "A chic, elegant, feminine jacket that creates a strong and stylish image for business and special occasions.",
+    "size": "XL",
+    "color": "Blue",
+    "img": "/photo/img/5.jpg",
+    "quantity":1
+  },
+
+  {
+    "id_product": 6,
+    "product_name": "Shirt",
+    "price": 60,
+    "text": "A sophisticated, stylish, women's shirt that gives a relaxed elegance and is suitable for various situations.",
+    "size": "XL",
+    "color": "Blue",
+    "img": "/photo/img/6.jpg",
+    "quantity":1
+  }
+
+]

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+</head>
+<body>
+        
+    <header class="header ">
+            <div class="container">
+                <nav class="menu">
+                    <ul class="menu_left">
+                        <li class="menu_left__item_1"><a href="index.html" class="menu__link"><img src="photo/svg/logo.svg"
+                                    alt="logo"></a>
+                        </li>
+                        <li class="menu_left__item_2"><a href="catalog.html" class="menu__link"><img src="photo/svg/lypa.svg"
+                                    alt="lypa"></a>
+                        </li>
+                    </ul>
+                    <ul class="menu_right">
+                        <li class="menu_right__item_1"><a href="#" class="menu__link"><img src="photo/svg/menu.svg"
+                                    alt="menu"></a>
+    
+                            <div class="mega-box">
+                                <a class="menu-x" href="">X</a>
+                                <h2 class="mega-menu">
+                                    MENU
+                                </h2>
+                                <div class="mega-item">
+                                    <h3 class="mega-heading">MAN</h3>
+                                    <a class="mega-link" class="mega-link" href="catalog.html">Accessories</a>
+                                    <a class="mega-link" class="mega-link" href="catalog.html">Bags</a>
+                                    <a class="mega-link" class="mega-link" href="catalog.html">Denim</a>
+                                    <a class="mega-link" class="mega-link" href="catalog.html">T-Shirts</a>
+                                </div>
+    
+                                <div class="mega-item">
+                                    <h3 class="mega-heading">WOMAN</h3>
+                                    <a class="mega-link" class="mega-link" href="catalog.html">Accessories</a>
+                                    <a class="mega-link" class="mega-link" href="catalog.html">Jackets & Coats</a>
+                                    <a class="mega-link" class="mega-link" href="catalog.html">Polos</a>
+                                    <a class="mega-link" class="mega-link" href="catalog.html">T-Shirts</a>
+                                    <a class="mega-link" class="mega-link" href="catalog.html">Shirts</a>
+                                </div>
+    
+                                <div class="mega-item">
+                                    <h3 class="mega-heading">KIDS</h3>
+                                    <a class="mega-link" class="mega-link" href="catalog.html">Accessories</a>
+                                    <a class="mega-link" class="mega-link" href="catalog.html">Jackets & Coats</a>
+                                    <a class="mega-link" class="mega-link" href="catalog.html">Polos</a>
+                                    <a class="mega-link" class="mega-link" href="catalog.html">T-Shirts</a>
+                                    <a class="mega-link" class="mega-link" href="catalog.html">Shirts</a>
+                                    <a class="mega-link" class="mega-link" href="catalog.html">Bags</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="menu_right__item_3"><a href="cart.html" class="menu__link"><img src="photo/svg/basket.svg"
+                                    alt="korzina"></a></li>
+                    </ul>
+                </nav>
+            </div>
+    
+    </header>
+
+    <section class="catalog_basket container">
+        <h1 class="catalog_basket__h1">SHOPPING BASKET</h1>
+        <div></div>
+    </section>
+    
+   
+    <section class="basket container">
+       
+            <div id="bask">
+                <p class="text_basket" v-if="!bask.length">BASKET IS EMPTY</p>
+            <div class="cart-product-box" v-for="product of bask">
+                
+                <img class="cart-product-box__pic" :src="product.img" alt="cart-product">
+                <div class="cart-product-box__info">
+
+                    <div class="box__info__mix">
+                        <h3 class="box__info__mix-h3">
+                            {{ product.product_name }}
+                        </h3>
+                        <button class="del-btn-1" @click="removeProduct(product)">x</button>
+                    </div>
+
+                    <p class="box__info__price">Total Price: <span class="cart-price">{{ product.price * product.quantity }} BYN</span></p>
+                    <p class="box__info__color">Color: <span class="cart-color">{{ product.color }}</span></p>
+                    <p class="box__info__size">Size: <span class="cart-size"> {{ product.size }} </span></p>
+                    <p class="box__info__quantity">Quantity: {{ product.quantity }}</p>
+                </div>
+
+           
+        </div> 
+           
+    </section>
+   
+
+    <section class="subscribe">
+        <div class="sub__content container">
+
+            <figure class="sub__info">
+                <div class="sub__face"><img src="photo/svg/face.svg" alt="face"></div>
+                <p class="sub__face__text">I am very happy with my purchase in this online store! Fast delivery, excellent quality of goods and responsive staff. I recommend it!</p>
+            </figure>
+    
+
+        <div class="sub__message">
+            <h3 class="sub__message__text"><span class="sub__span">SUBSCRIBE</span> <br>
+                FOR OUR NEWLETTER AND PROMOTION</h3>
+            <form action="#">
+                <div class="sub__message__form">
+
+                    <input class="email" type="email" placeholder="Enter Your Email">
+                    <button class="button__sub" type="submit">Subscribe</button>
+
+                </div>
+            </form>
+        </div>
+
+    </div>
+    </section>
+
+    <section class="footer">
+        <div class="container">
+            <div class="footerLeft">
+                <a href="https://ru-ru.facebook.com/">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com/">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://ru.pinterest.com/#top">
+                    <i class="fab fa-pinterest-p"></i>
+                </a>
+                <a href="https://twitter.com/?lang=ru">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
+            <div class="footerRight">
+                &copy; 2023  All Rights Reserved.
+            </div>
+        </div>
+    </section>
+
+    <section class="madeBy">
+        <p>Created by Kravcov Andrei</p>
+    </section>
+
+
+    <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js" integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="mainBasket.js"></script>
+       
+
+</body>
+</html>

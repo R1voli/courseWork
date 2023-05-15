@@ -1,0 +1,201 @@
+[
+  {
+    "id_product": 1,
+    "product_name": "Jacket",
+    "price": 100,
+    "text": "Stylish, wear-resistant, multifunctional jacket for all weather conditions.",
+    "size": "XL",
+    "color": "Blue",
+    "img": "/photo/img/1.jpg",
+    "quantity": 1
+  },
+
+  {
+    "id_product": 2,
+    "product_name": "Dress",
+    "price": 150,
+    "text": "Elegant, classic, black dress, perfect for special events.",
+    "size": "XS",
+    "color": "Black",
+    "img": "/photo/img/2.jpg",
+    "quantity": 1
+  },
+
+  {
+    "id_product": 3,
+    "product_name": "Sweatshirt",
+    "price": 30,
+    "text": "Trendy, comfortable, stylish sweatshirt for a fashionable and comfortable everyday look.",
+    "size": "XL",
+    "color": "Blue",
+    "img": "/photo/img/3.jpg",
+    "quantity": 1
+  },
+
+  {
+    "id_product": 4,
+    "product_name": "Vest",
+    "price": 25,
+    "text": "Refreshing, stylish, blue and white T-shirt, ideal for summer adventures and free time.",
+    "size": "XL",
+    "color": "Blue",
+    "img": "/photo/img/4.jpg",
+    "quantity": 1
+  },
+
+  {
+    "id_product": 5,
+    "product_name": "Suit jacket",
+    "price": 70,
+    "text": "A chic, elegant, feminine jacket that creates a strong and stylish image for business and special occasions.",
+    "size": "XL",
+    "color": "Blue",
+    "img": "/photo/img/5.jpg",
+    "quantity": 1
+  },
+
+  {
+    "id_product": 6,
+    "product_name": "Shirt",
+    "price": 60,
+    "text": "A sophisticated, stylish, women's shirt that gives a relaxed elegance and is suitable for various situations.",
+    "size": "XL",
+    "color": "Blue",
+    "img": "/photo/img/6.jpg",
+    "quantity": 1
+  },
+
+  {
+    "id_product": 7,
+    "product_name": "Polo",
+    "price": 50,
+    "text": "Stylish, comfortable, versatile polo.",
+    "size": "XL",
+    "color": "Gray",
+    "img": "/photo/img/7.jpg",
+    "quantity": 1
+  },
+  {
+    "id_product": 8,
+    "product_name": "Children's jacket",
+    "price": 70,
+    "text": "This children's jacket is the perfect choice for your child's comfort and style. Made of soft material that provides warmth and comfort. The versatile design and bright colors will add joy and style to the baby's everyday wardrobe.",
+    "size": "XL",
+    "color": "Blue",
+    "img": "/photo/img/8.jpg",
+    "quantity": 1
+  },
+  {
+    "id_product": 9,
+    "product_name": "Children's polo",
+    "price": 70,
+    "text": "This children's polo is a great choice for fashionable and active children. Made of high-quality cotton, providing comfort and freedom of movement. Stylish design with classic collar and durable finish makes it perfect for everyday wear.",
+    "size": "XL",
+    "color": "Blue",
+    "img": "/photo/img/9.jpg",
+    "quantity": 1
+  },
+  {
+    "id_product": 10,
+    "product_name": "Dress",
+    "price": 270,
+    "text": "Our evening dresses are an elegant combination of sophistication and luxury, designed to make you look unsurpassed at any special event.",
+    "size": "XL",
+    "color": "Blue",
+    "img": "/photo/img/10.jpg",
+    "quantity": 1
+  },
+  {
+    "id_product": 11,
+    "product_name": "Body",
+    "price": 110,
+    "text": "Our women's bodysuits are a perfect combination of comfort and sexuality, created for the most stylish and daring women.",
+    "size": "XL",
+    "color": "Blue",
+    "img": "/photo/img/11.jpg",
+    "quantity": 1
+  },
+  {
+    "id_product": 12,
+    "product_name": "Jacket",
+    "price": 70,
+    "text": "Our women's black and white jackets are a stylish and versatile wardrobe element that gives the image of modernity and elegance.",
+    "size": "XL",
+    "color": "Blue",
+    "img": "/photo/img/12.jpg",
+    "quantity": 1
+  },
+  {
+    "id_product": 13,
+    "product_name": "Fur coat",
+    "price": 570,
+    "text": "Our women's fur coat is a luxurious and refined piece of clothing designed to make you feel confident and wonderful on cold winter days.",
+    "size": "XL",
+    "color": "Blue",
+    "img": "/photo/img/13.jpg",
+    "quantity": 1
+  },
+  {
+    "id_product": 14,
+    "product_name": "Fur coat",
+    "price": 570,
+    "text": "Our black women's fur coat is a true symbol of elegance, luxury and style.",
+    "size": "XL",
+    "color": "Blue",
+    "img": "/photo/img/14.jpg",
+    "quantity": 1
+  },
+  {
+    "id_product": 15,
+    "product_name": "Fur coat",
+    "price": 70,
+    "text": "Our brown women's fur coat is the epitome of elegance, style and warmth.",
+    "size": "XL",
+    "color": "Blue",
+    "img": "/photo/img/15.jpg",
+    "quantity": 1
+  },
+  {
+    "id_product": 16,
+    "product_name": "Jeans",
+    "price": 70,
+    "text": "Our jeans are the perfect choice for those who are looking for a combination of comfort, style and practicality.",
+    "size": "XL",
+    "color": "Blue",
+    "img": "/photo/img/16.jpg",
+    "quantity": 1
+  },
+  {
+    "id_product": 17,
+    "product_name": "Bag",
+    "price": 70,
+    "text": "Our backpack is a stylish and practical solution for a modern image and an active lifestyle. The bag gives confidence and solidity in all endeavors.Usually they put various supplies, pens and all sorts of important papers there.If you want to please your loved one or your child, then this is an ideal option",
+    "size": "XL",
+    "color": "Blue",
+    "img": "/photo/img/17.jpg",
+    "quantity": 1
+  },
+  {
+    "id_product": 18,
+    "product_name": "Belt",
+    "price": 70,
+    "text": "Our belt is a stylish and functional accessory that will add elegance and completeness to your image.",
+    "size": "XL",
+    "color": "Blue",
+    "img": "/photo/img/18.jpg",
+    "quantity": 1
+  },
+  {
+    "id_product": 19,
+    "product_name": "Pouch",
+    "price": 70,
+    "text": "Our purse is an exquisite accessory that combines functionality and style.",
+    "size": "XL",
+    "color": "Blue",
+    "img": "/photo/img/19.jpg",
+    "quantity": 1
+  }
+
+
+
+]

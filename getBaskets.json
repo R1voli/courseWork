@@ -1,0 +1,31 @@
+[{
+    "id_product": 1,
+    "product_name": "Jacket",
+    "price": 100,
+    "text": "Stylish, wear-resistant, multifunctional jacket for all weather conditions.",
+    "size": "XL",
+    "color": "Blue",
+    "img": "/photo/img/1.jpg",
+    "quantity":5
+  },
+
+  {
+    "id_product": 2,
+    "product_name": "Dress",
+    "price": 150,
+    "text": "Elegant, classic, black dress, perfect for special events.",
+    "size": "XS",
+    "color": "Black",
+    "img": "/photo/img/2.jpg",
+    "quantity":4
+  },
+  {
+    "id_product": 3,
+    "product_name": "Sweatshirt",
+    "price": 30,
+    "text": "Trendy, comfortable, stylish sweatshirt for a fashionable and comfortable everyday look.",
+    "size": "XL",
+    "color": "Blue",
+    "img": "/photo/img/3.jpg",
+    "quantity":7
+  }]
